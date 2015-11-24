@@ -17,8 +17,9 @@
 			});
 	}]);
 
-	app.controller("MainCtrl",["$scope",function($scope){
-
+	app.controller("MainCtrl",[function($scope){
+		// What hhapens when this controller is called
+		console.log("This is the main controller");
 	}]);
 
 }());
