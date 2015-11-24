@@ -21,18 +21,26 @@
 			})
 			.when("/contact",{
 				templateUrl: "/contact.html",
-				controller: "MainCtrl"
+				controller: "ContactCtrl"
 			})
 			.when("/service",{
 				templateUrl: "/service.html",
-				controller: "MainCtrl"
+				controller: "ServicesCtrl"
 			});
 	}]);
 
 	app.controller("MainCtrl",["$scope",function($scope){
 		// What hhapens when this controller is called
 		$scope.person = "John Doe"
-		console.log($scope);
+		console.log("In the Main Controller");
+	}]);
+
+	app.controller("ContactCtrl",["$scope", function($scope){
+		console.log("In the contacts controller");
+	}]);
+
+	app.controller("ServicesCtrl",["$scope", function($scope){
+		console.log("In the Services controller");
 	}]);
 
 }());
