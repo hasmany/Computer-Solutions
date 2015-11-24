@@ -26,9 +26,9 @@
         <nav>
           <ul class="nav nav-justified">
             <li><a href="#main">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -36,6 +36,27 @@
       <ng-view></ng-view>
 
 
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; Company 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Jquery Library -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Base Angular Framework -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!-- Angular Routing Module  -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+
+    <!-- Embeded Templates Begin-->
+    <!-- ================== -->
+
+      <!-- Main Template  -->
       <script type="text/ng-template" id="/main.html">
         <div class="jumbotron">
           <div class="row">
@@ -67,20 +88,142 @@
         
       </script>
 
+      <!-- About Template -->
+      <script type="text/ng-template" id="/about.html">
+          <div class="row">
 
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>&copy; Company 2014</p>
-      </footer>
+            <div class="col-lg-12">
+              <h2>About</h2>
+              <p>
+                Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                Cras at sapien pulvinar turpis vehicula gravida sed vitae nisi. Nunc malesuada massa eu finibus tempor. Quisque sit amet aliquam massa, in vehicula ex. Duis sodales aliquet ligula. Proin sodales tellus ut nibh viverra fermentum. Nullam vel sapien finibus, finibus massa ut, aliquet magna. Integer eget diam ante. Donec molestie risus ac massa faucibus mattis. Sed id tristique purus. Cras nec lorem eget quam vulputate pharetra ut id nisl.
+              </p>
+              <p>
+                Nam neque ante, eleifend in pretium sed, elementum sed nisi. Nullam commodo, mi a auctor venenatis, quam elit luctus mauris, vitae facilisis lectus turpis id sapien. Nullam sed placerat turpis. Donec sagittis metus sem, vel vulputate urna condimentum eget. Donec efficitur ut massa non scelerisque. Proin feugiat felis quis odio dapibus facilisis. Duis a sagittis ante. Aenean volutpat est id nisi rutrum, eu luctus odio ultricies. Pellentesque vel accumsan risus. Sed fermentum ante in sapien condimentum fringilla. Morbi sit amet viverra nisi, sed efficitur sem. Ut pellentesque neque eu facilisis fermentum. Aliquam aliquet elementum dapibus. Nulla posuere ex mi, accumsan rhoncus elit lobortis ac. Aliquam a dapibus turpis, vel elementum   ligula.            
+              </p>
+            </div>
+          </div>
+      </script>
 
-    </div> <!-- /container -->
+      <!-- Contact Template -->
+      <script type="text/ng-template" id="/contact.html">  
+        <div class="row">
 
-    <!-- Jquery Library -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Base Angular Framework -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <!-- Angular Routing Module  -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
+          <div class="col-lg-12">
+            <h2>Contact</h2>
+            <p>
+              Please email support@computersolutions.fake
+            </p>
+            <h3>Locations</h3>
+            <ul class="location">
+              <li>
+                Lynn Location
+              </li>
+              <li>
+                333 Walnut st
+              </li>
+              <li>
+                Lynn, M, 01902
+              </li>
+              <li>
+                781-555-5555
+              </li>
+            </ul>
+            <ul class="location">
+              <li>
+                Lynn Location
+              </li>
+              <li>
+                333 Walnut st
+              </li>
+              <li>
+                Lynn, M, 01902
+              </li>
+              <li>
+                781-555-5555
+              </li>
+            </ul>
+            <ul class="location">
+              <li>
+                Lynn Location
+              </li>
+              <li>
+                333 Walnut st
+              </li>
+              <li>
+                Lynn, M, 01902
+              </li>
+              <li>
+                781-555-5555
+              </li>
+            </ul>                      
+            </ul>
+          </div>
+        </div>
+      </script>
+
+      <!-- Service Template -->
+      <script type="text/ng-template" id="/service.html">
+        <div class="row">
+
+              <div class="col-lg-12">
+
+                <h2>Services</h2>
+
+                <!--  -->
+                <div class="row service">
+
+                  <div class="col-md-2">
+                    <img src="http://techguystaging.com/files/computer-icon.png">  
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Hardware Repair</h3>
+                    <p>
+                       Nunc malesuada massa eu finibus tempor. Quisque sit amet aliquam massa, in vehicula ex. Duis sodales aliquet ligula. Proin sodales tellus ut nibh viverra fermentum. Nullam vel sapien finibus, finibus massa ut, aliquet magna. Integer eget diam ante. Donec molestie risus ac massa faucibus mattis. Sed id tristique purus. Cras nec lorem eget quam vulputate pharetra ut id nisl.                
+                    </p>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                  </div>
+
+                </div>
+                <!--  -->
+
+                <div class="row service">
+
+                  <div class="col-md-2">
+                    <img src="http://techguystaging.com/files/computer-icon.png">  
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Hardware Repair</h3>
+                    <p>
+                       Nunc malesuada massa eu finibus tempor. Quisque sit amet aliquam massa, in vehicula ex. Duis sodales aliquet ligula. Proin sodales tellus ut nibh viverra fermentum. Nullam vel sapien finibus, finibus massa ut, aliquet magna. Integer eget diam ante. Donec molestie risus ac massa faucibus mattis. Sed id tristique purus. Cras nec lorem eget quam vulputate pharetra ut id nisl.                
+                    </p>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                  </div>
+                  
+                </div>
+                <!--  -->
+
+                <div class="row service">
+
+                  <div class="col-md-2">
+                    <img src="http://techguystaging.com/files/computer-icon.png">  
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Hardware Repair</h3>
+                    <p>
+                       Nunc malesuada massa eu finibus tempor. Quisque sit amet aliquam massa, in vehicula ex. Duis sodales aliquet ligula. Proin sodales tellus ut nibh viverra fermentum. Nullam vel sapien finibus, finibus massa ut, aliquet magna. Integer eget diam ante. Donec molestie risus ac massa faucibus mattis. Sed id tristique purus. Cras nec lorem eget quam vulputate pharetra ut id nisl.                
+                    </p>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+
+      </script>
+
+    <!-- Embeded Templates End -->
+    <!-- ================== -->
   </body>
 </html>

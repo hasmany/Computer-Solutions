@@ -15,7 +15,18 @@
 				templateUrl: "/main.html",
 				controller: "MainCtrl"
 			})
-			// .otherwise({redirectTo: "/main"})
+			.when("/about",{
+				templateUrl: "/about.html",
+				controller: "MainCtrl"
+			})
+			.when("/contact",{
+				templateUrl: "/contact.html",
+				controller: "MainCtrl"
+			})
+			.when("/service",{
+				templateUrl: "/service.html",
+				controller: "MainCtrl"
+			});
 	}]);
 
 	app.controller("MainCtrl",["$scope",function($scope){
