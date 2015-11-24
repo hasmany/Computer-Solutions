@@ -11,15 +11,17 @@
 	app.config(["$routeProvider", function($routeProvider){
 		// Set up Routes
 		$routeProvider
-			.when("/",{
+			.when("/main",{
 				templateUrl: "/main.html",
 				controller: "MainCtrl"
-			});
+			})
+			// .otherwise({redirectTo: "/main"})
 	}]);
 
-	app.controller("MainCtrl",[function($scope){
+	app.controller("MainCtrl",["$scope",function($scope){
 		// What hhapens when this controller is called
-		console.log("This is the main controller test");
+		$scope.person = "John Doe"
+		console.log($scope);
 	}]);
 
 }());
