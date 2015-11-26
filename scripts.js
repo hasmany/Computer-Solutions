@@ -29,9 +29,27 @@
 			});
 	}]);
 
-	app.controller("MainCtrl",["$scope",function($scope){
+	app.controller("MainCtrl",["$scope","$http", function($scope, $http){
 		// What hhapens when this controller is called
 		$scope.person = "John Doe"
+
+		$http({
+			method: "GET",
+			url: "services.json"
+		}).then(function successCallBack(response){
+			$scope.services = [];
+			
+			for (var i = 0, iLen = response.data.length; i < iLen; i++) {
+				$scope.services.push({
+					name: response.data[i].name,
+					description: response.data[i].description,
+					image: response.data[i].image
+				});
+			}
+
+		}, function errorCallback(response){
+			console.log("error! " + response.status);
+		});
 		console.log("In the Main Controller");
 	}]);
 
