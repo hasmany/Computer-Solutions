@@ -39,8 +39,37 @@
 		console.log("In the contacts controller");
 	}]);
 
-	app.controller("ServicesCtrl",["$scope", function($scope){
-		console.log("In the Services controller");
+	app.controller("ServicesCtrl",["$scope","$http", function($scope, $http){
+		
+
+		$http({
+			method: "GET",
+			url: "services.json"
+		}).then(function successCallBack(response){
+			// This call back will be called asynchronoulsy
+			// when the response is available
+			// You want to loop through your response
+			$scope.services = [];
+			console.log("In your Services Controller");
+			// Loop through your responses
+			// and push data as an object into services array
+			for (var i = 0, iLen = response.data.length; i < iLen; i++) {
+				$scope.services.push({
+					name: response.data[i].name,
+					description: response.data[i].description,
+					image: response.data[i].image
+				});
+			}
+			
+			console.log($scope.services);
+		}, function errorCallBack(response){
+			// called asynchronously if an error occurs
+			// or server returns response with an error status
+			console.log("error");
+		});
+		console.log($http);
+		// console.log("In the Services controller");
 	}]);
 
 }());
+

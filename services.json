@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"name": "Hardware-Repair",
+		"description": "Nunc malesuada massa eu finibus tempor. Quisque sit amet aliquam massa, in vehicula ex. Duis sodales aliquet ligula. Proin sodales tellus ut nibh viverra fermentum. Nullam vel sapien finibus, finibus massa ut, aliquet magna. Integer eget diam ante. Donec molestie risus ac massa faucibus mattis. Sed id tristique purus. Cras nec lorem eget quam vulputate pharetra ut id nisl.",
+		"image": "computer-icon.png"
+	},
+	{
+		"id": 2,
+		"name": "Hardware-Repair",
+		"description": "Nunc malesuada massa eu finibus tempor. Quisque sit amet aliquam massa, in vehicula ex. Duis sodales aliquet ligula. Proin sodales tellus ut nibh viverra fermentum. Nullam vel sapien finibus, finibus massa ut, aliquet magna. Integer eget diam ante. Donec molestie risus ac massa faucibus mattis. Sed id tristique purus. Cras nec lorem eget quam vulputate pharetra ut id nisl.",
+		"image": "computer-icon.png"
+	},
+			{
+		"id": 3,
+		"name": "Hardware-Repair",
+		"description": "Nunc malesuada massa eu finibus tempor. Quisque sit amet aliquam massa, in vehicula ex. Duis sodales aliquet ligula. Proin sodales tellus ut nibh viverra fermentum. Nullam vel sapien finibus, finibus massa ut, aliquet magna. Integer eget diam ante. Donec molestie risus ac massa faucibus mattis. Sed id tristique purus. Cras nec lorem eget quam vulputate pharetra ut id nisl.",
+		"image": "computer-icon.png"
+	}
+]
