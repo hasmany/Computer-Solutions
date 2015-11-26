@@ -35,8 +35,32 @@
 		console.log("In the Main Controller");
 	}]);
 
-	app.controller("ContactCtrl",["$scope", function($scope){
+	app.controller("ContactCtrl",["$scope", "$http", function($scope, $http){
 		console.log("In the contacts controller");
+
+		// Get request to locations .json
+		$http({
+			method: "GET",
+			url: "locations.json"
+		}).then( function sucessCallBack(response){
+			$scope.locations = [];
+
+			for (var i = 0, iLen = response.data.length; i < iLen; i++) {
+				$scope.locations.push({
+					name: response.data[i].name,
+					street_address : response.data[i].street_address,
+					city: response.data[i].city,
+					state: response.data[i].state,
+					zip: response.data[i].zip,
+					phone: response.data[i].phone
+				});
+			}
+
+			console.log($scope.locations);
+
+		}, function errorCallBack(response){
+			console.log("Error!" + response.status);
+		})
 	}]);
 
 	app.controller("ServicesCtrl",["$scope","$http", function($scope, $http){
