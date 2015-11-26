@@ -60,7 +60,8 @@
 					image: response.data[i].image
 				});
 			}
-			
+		
+		
 			console.log($scope.services);
 		}, function errorCallBack(response){
 			// called asynchronously if an error occurs
