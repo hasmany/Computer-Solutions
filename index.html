@@ -115,49 +115,20 @@
               Please email support@computersolutions.fake
             </p>
             <h3>Locations</h3>
-            <ul class="location">
+            <ul class="location" ng-repeat="location in locations">
               <li>
-                Lynn Location
+                {{location.name}}
               </li>
               <li>
-                333 Walnut st
+                {{location.street_address}}
               </li>
               <li>
-                Lynn, M, 01902
+                {{location.city}}, {{location.state}}, {{location.zip}}
               </li>
               <li>
-                781-555-5555
+                {{location.phone}}
               </li>
-            </ul>
-            <ul class="location">
-              <li>
-                Lynn Location
-              </li>
-              <li>
-                333 Walnut st
-              </li>
-              <li>
-                Lynn, M, 01902
-              </li>
-              <li>
-                781-555-5555
-              </li>
-            </ul>
-            <ul class="location">
-              <li>
-                Lynn Location
-              </li>
-              <li>
-                333 Walnut st
-              </li>
-              <li>
-                Lynn, M, 01902
-              </li>
-              <li>
-                781-555-5555
-              </li>
-            </ul>                      
-            </ul>
+            </ul>                     
           </div>
         </div>
       </script>
